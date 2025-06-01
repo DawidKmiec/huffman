@@ -1,4 +1,4 @@
-CMakeFiles/huffman.dir/main.c.o: /home/dkmiec/apps/huffman/main.c \
+CMakeFiles/src.dir/src/tree.c.o: /home/dkmiec/apps/huffman/src/tree.c \
  /usr/include/stdc-predef.h /home/dkmiec/apps/huffman/include/tree.h \
  /usr/include/assert.h /usr/include/features.h \
  /usr/include/features-time64.h \

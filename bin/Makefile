@@ -129,29 +129,18 @@ huffman/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/huffman.dir/build.make CMakeFiles/huffman.dir/build
 .PHONY : huffman/fast
 
-file_reading.o: file_reading.c.o
-.PHONY : file_reading.o
+#=============================================================================
+# Target rules for targets named src
 
-# target to build an object file
-file_reading.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/huffman.dir/build.make CMakeFiles/huffman.dir/file_reading.c.o
-.PHONY : file_reading.c.o
+# Build rule for target.
+src: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src
+.PHONY : src
 
-file_reading.i: file_reading.c.i
-.PHONY : file_reading.i
-
-# target to preprocess a source file
-file_reading.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/huffman.dir/build.make CMakeFiles/huffman.dir/file_reading.c.i
-.PHONY : file_reading.c.i
-
-file_reading.s: file_reading.c.s
-.PHONY : file_reading.s
-
-# target to generate assembly for a file
-file_reading.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/huffman.dir/build.make CMakeFiles/huffman.dir/file_reading.c.s
-.PHONY : file_reading.c.s
+# fast build rule for target.
+src/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/src.dir/build.make CMakeFiles/src.dir/build
+.PHONY : src/fast
 
 main.o: main.c.o
 .PHONY : main.o
@@ -177,6 +166,30 @@ main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/huffman.dir/build.make CMakeFiles/huffman.dir/main.c.s
 .PHONY : main.c.s
 
+src/tree.o: src/tree.c.o
+.PHONY : src/tree.o
+
+# target to build an object file
+src/tree.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/src.dir/build.make CMakeFiles/src.dir/src/tree.c.o
+.PHONY : src/tree.c.o
+
+src/tree.i: src/tree.c.i
+.PHONY : src/tree.i
+
+# target to preprocess a source file
+src/tree.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/src.dir/build.make CMakeFiles/src.dir/src/tree.c.i
+.PHONY : src/tree.c.i
+
+src/tree.s: src/tree.c.s
+.PHONY : src/tree.s
+
+# target to generate assembly for a file
+src/tree.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/src.dir/build.make CMakeFiles/src.dir/src/tree.c.s
+.PHONY : src/tree.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -186,12 +199,13 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... huffman"
-	@echo "... file_reading.o"
-	@echo "... file_reading.i"
-	@echo "... file_reading.s"
+	@echo "... src"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... src/tree.o"
+	@echo "... src/tree.i"
+	@echo "... src/tree.s"
 .PHONY : help
 
 

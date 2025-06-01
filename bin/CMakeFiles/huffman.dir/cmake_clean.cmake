@@ -1,6 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/huffman.dir/file_reading.c.o"
-  "CMakeFiles/huffman.dir/file_reading.c.o.d"
   "CMakeFiles/huffman.dir/main.c.o"
   "CMakeFiles/huffman.dir/main.c.o.d"
   "huffman"

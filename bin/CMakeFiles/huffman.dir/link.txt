@@ -1,1 +1,1 @@
-/usr/bin/cc CMakeFiles/huffman.dir/main.c.o CMakeFiles/huffman.dir/file_reading.c.o -o huffman 
+/usr/bin/cc CMakeFiles/huffman.dir/main.c.o -o huffman  libsrc.a 

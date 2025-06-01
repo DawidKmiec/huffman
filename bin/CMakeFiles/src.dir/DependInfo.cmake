@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/dkmiec/apps/huffman/main.c" "CMakeFiles/huffman.dir/main.c.o" "gcc" "CMakeFiles/huffman.dir/main.c.o.d"
+  "/home/dkmiec/apps/huffman/src/tree.c" "CMakeFiles/src.dir/src/tree.c.o" "gcc" "CMakeFiles/src.dir/src/tree.c.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
