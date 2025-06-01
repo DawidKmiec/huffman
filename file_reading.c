@@ -1,10 +1,8 @@
 #include <stdio.h>
 #include <assert.h>
 #include <stdlib.h>
-
-//#include "include.h"
-
-//
+/*
+#include "include.h"
 
 typedef struct character_abundance{
     int appearances[256];
@@ -22,15 +20,15 @@ void tallyAppearanceAtLine(character_abundance* initial_abundance, line_buffer c
         currentLetter = current_line.buffer[i];
     
         // casts the char to a int (0-256), adds 1 to the corresponding psace
-        initial_abundance->appearances[(int)currentLetter] = initial_abundance->appearances[(int)currentLetter] + 1;
+        initial_abundance->appearances[(int)currentLetter]++;
 
         i++;
     } while (currentLetter != '\n' && i < 256);
 }
 
-character_abundance fullTallyAppearance(FILE* input_file /*read only*/) {
+character_abundance fullTallyAppearance(FILE* input_file) {
     line_buffer line;
-    character_abundance total_abundance = {{0}};
+    character_abundance total_abundance = {0};
 
     while(fgets(line.buffer, 256, input_file) != 0){
         tallyAppearanceAtLine(&total_abundance, line);
@@ -43,29 +41,8 @@ void printAbundance(character_abundance abundance){
     for (int i = 0; i<256; i++) {
         if (abundance.appearances[i] != 0)
         {
-            printf("The character %c appeared %d times\n", (char)i, abundance.appearances[i]);
+            printf("The character %c appeared %d many times", (char)i, abundance.appearances[i]);
         }
     }
 }
-
-
-
-///////////////////
-
-char input_file[] = "../input.txt";
-char output_file[] = "../output.txt";
-
-int main() {
-    FILE *pF = fopen(input_file, "r");
-    if (pF == NULL) {
-        abort();
-    }
-
-    character_abundance full_char_abundance;
-    full_char_abundance = fullTallyAppearance(pF);
-    
-    printAbundance(full_char_abundance);
-    
-    fclose(pF);
-    pF = NULL;
-}
+*/

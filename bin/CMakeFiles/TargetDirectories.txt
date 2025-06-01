@@ -1,0 +1,3 @@
+/home/dkmiec/apps/huffman/bin/CMakeFiles/huffman.dir
+/home/dkmiec/apps/huffman/bin/CMakeFiles/edit_cache.dir
+/home/dkmiec/apps/huffman/bin/CMakeFiles/rebuild_cache.dir
