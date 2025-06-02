@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/src.dir/src/tree.c.o"
-  "CMakeFiles/src.dir/src/tree.c.o.d"
+  "CMakeFiles/src.dir/src/stringcounter.c.o"
+  "CMakeFiles/src.dir/src/stringcounter.c.o.d"
+  "CMakeFiles/src.dir/src/treemerger.c.o"
+  "CMakeFiles/src.dir/src/treemerger.c.o.d"
   "libsrc.a"
   "libsrc.pdb"
 )

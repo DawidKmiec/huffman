@@ -166,29 +166,53 @@ main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/huffman.dir/build.make CMakeFiles/huffman.dir/main.c.s
 .PHONY : main.c.s
 
-src/tree.o: src/tree.c.o
-.PHONY : src/tree.o
+src/stringcounter.o: src/stringcounter.c.o
+.PHONY : src/stringcounter.o
 
 # target to build an object file
-src/tree.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/src.dir/build.make CMakeFiles/src.dir/src/tree.c.o
-.PHONY : src/tree.c.o
+src/stringcounter.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/src.dir/build.make CMakeFiles/src.dir/src/stringcounter.c.o
+.PHONY : src/stringcounter.c.o
 
-src/tree.i: src/tree.c.i
-.PHONY : src/tree.i
+src/stringcounter.i: src/stringcounter.c.i
+.PHONY : src/stringcounter.i
 
 # target to preprocess a source file
-src/tree.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/src.dir/build.make CMakeFiles/src.dir/src/tree.c.i
-.PHONY : src/tree.c.i
+src/stringcounter.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/src.dir/build.make CMakeFiles/src.dir/src/stringcounter.c.i
+.PHONY : src/stringcounter.c.i
 
-src/tree.s: src/tree.c.s
-.PHONY : src/tree.s
+src/stringcounter.s: src/stringcounter.c.s
+.PHONY : src/stringcounter.s
 
 # target to generate assembly for a file
-src/tree.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/src.dir/build.make CMakeFiles/src.dir/src/tree.c.s
-.PHONY : src/tree.c.s
+src/stringcounter.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/src.dir/build.make CMakeFiles/src.dir/src/stringcounter.c.s
+.PHONY : src/stringcounter.c.s
+
+src/treemerger.o: src/treemerger.c.o
+.PHONY : src/treemerger.o
+
+# target to build an object file
+src/treemerger.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/src.dir/build.make CMakeFiles/src.dir/src/treemerger.c.o
+.PHONY : src/treemerger.c.o
+
+src/treemerger.i: src/treemerger.c.i
+.PHONY : src/treemerger.i
+
+# target to preprocess a source file
+src/treemerger.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/src.dir/build.make CMakeFiles/src.dir/src/treemerger.c.i
+.PHONY : src/treemerger.c.i
+
+src/treemerger.s: src/treemerger.c.s
+.PHONY : src/treemerger.s
+
+# target to generate assembly for a file
+src/treemerger.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/src.dir/build.make CMakeFiles/src.dir/src/treemerger.c.s
+.PHONY : src/treemerger.c.s
 
 # Help Target
 help:
@@ -203,9 +227,12 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... src/tree.o"
-	@echo "... src/tree.i"
-	@echo "... src/tree.s"
+	@echo "... src/stringcounter.o"
+	@echo "... src/stringcounter.i"
+	@echo "... src/stringcounter.s"
+	@echo "... src/treemerger.o"
+	@echo "... src/treemerger.i"
+	@echo "... src/treemerger.s"
 .PHONY : help
 
 

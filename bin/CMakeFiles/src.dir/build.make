@@ -69,31 +69,47 @@ include CMakeFiles/src.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/src.dir/flags.make
 
-CMakeFiles/src.dir/src/tree.c.o: CMakeFiles/src.dir/flags.make
-CMakeFiles/src.dir/src/tree.c.o: /home/dkmiec/apps/huffman/src/tree.c
-CMakeFiles/src.dir/src/tree.c.o: CMakeFiles/src.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dkmiec/apps/huffman/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/src.dir/src/tree.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/src.dir/src/tree.c.o -MF CMakeFiles/src.dir/src/tree.c.o.d -o CMakeFiles/src.dir/src/tree.c.o -c /home/dkmiec/apps/huffman/src/tree.c
+CMakeFiles/src.dir/src/treemerger.c.o: CMakeFiles/src.dir/flags.make
+CMakeFiles/src.dir/src/treemerger.c.o: /home/dkmiec/apps/huffman/src/treemerger.c
+CMakeFiles/src.dir/src/treemerger.c.o: CMakeFiles/src.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dkmiec/apps/huffman/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/src.dir/src/treemerger.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/src.dir/src/treemerger.c.o -MF CMakeFiles/src.dir/src/treemerger.c.o.d -o CMakeFiles/src.dir/src/treemerger.c.o -c /home/dkmiec/apps/huffman/src/treemerger.c
 
-CMakeFiles/src.dir/src/tree.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/src.dir/src/tree.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dkmiec/apps/huffman/src/tree.c > CMakeFiles/src.dir/src/tree.c.i
+CMakeFiles/src.dir/src/treemerger.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/src.dir/src/treemerger.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dkmiec/apps/huffman/src/treemerger.c > CMakeFiles/src.dir/src/treemerger.c.i
 
-CMakeFiles/src.dir/src/tree.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/src.dir/src/tree.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dkmiec/apps/huffman/src/tree.c -o CMakeFiles/src.dir/src/tree.c.s
+CMakeFiles/src.dir/src/treemerger.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/src.dir/src/treemerger.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dkmiec/apps/huffman/src/treemerger.c -o CMakeFiles/src.dir/src/treemerger.c.s
+
+CMakeFiles/src.dir/src/stringcounter.c.o: CMakeFiles/src.dir/flags.make
+CMakeFiles/src.dir/src/stringcounter.c.o: /home/dkmiec/apps/huffman/src/stringcounter.c
+CMakeFiles/src.dir/src/stringcounter.c.o: CMakeFiles/src.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dkmiec/apps/huffman/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/src.dir/src/stringcounter.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/src.dir/src/stringcounter.c.o -MF CMakeFiles/src.dir/src/stringcounter.c.o.d -o CMakeFiles/src.dir/src/stringcounter.c.o -c /home/dkmiec/apps/huffman/src/stringcounter.c
+
+CMakeFiles/src.dir/src/stringcounter.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/src.dir/src/stringcounter.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dkmiec/apps/huffman/src/stringcounter.c > CMakeFiles/src.dir/src/stringcounter.c.i
+
+CMakeFiles/src.dir/src/stringcounter.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/src.dir/src/stringcounter.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dkmiec/apps/huffman/src/stringcounter.c -o CMakeFiles/src.dir/src/stringcounter.c.s
 
 # Object files for target src
 src_OBJECTS = \
-"CMakeFiles/src.dir/src/tree.c.o"
+"CMakeFiles/src.dir/src/treemerger.c.o" \
+"CMakeFiles/src.dir/src/stringcounter.c.o"
 
 # External object files for target src
 src_EXTERNAL_OBJECTS =
 
-libsrc.a: CMakeFiles/src.dir/src/tree.c.o
+libsrc.a: CMakeFiles/src.dir/src/treemerger.c.o
+libsrc.a: CMakeFiles/src.dir/src/stringcounter.c.o
 libsrc.a: CMakeFiles/src.dir/build.make
 libsrc.a: CMakeFiles/src.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/dkmiec/apps/huffman/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library libsrc.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/dkmiec/apps/huffman/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C static library libsrc.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/src.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/src.dir/link.txt --verbose=$(VERBOSE)
 
