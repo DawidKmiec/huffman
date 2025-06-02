@@ -22,7 +22,6 @@ bool check_ordered_list(huffman_list* array) {
 }
 
 void bubble_sort_iteration(huffman_list* array) {
-    
     huffman_node * temp;
 
     for (int i = 0; i < (array->length-1); i++){
@@ -46,3 +45,29 @@ void print_huffman_array(huffman_list* array) {
     }
     printf("\n");
 }
+
+bool merge_huffman_iteration(huffman_list* array) {
+    if (array->length <= 1){
+        return false;
+    }
+
+    huffman_node * temp = malloc(sizeof(huffman_node));
+    temp->left = array->start[array->length-2];
+    temp->right = array->start[array->length-1];
+
+    temp->frequency = ((int)array->start[array->length-1]->frequency + (int)array->start[array->length-2]->frequency);
+
+    realloc(array->start, array->length-1);
+    if(array->start == NULL){
+        abort();
+    }
+
+    array->length--;
+    array->start[array->length-1] = temp;
+
+    return true;
+}
+
+// now create a merge function
+// from the two left strings connect them up
+// sort and repeat

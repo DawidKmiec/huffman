@@ -26,3 +26,5 @@ void bubble_sort_iteration(huffman_list* array);
 void print_huffman_array(huffman_list* array);
 
 void bubble_sort_array(huffman_list* array);
+
+bool merge_huffman_iteration(huffman_list* array);

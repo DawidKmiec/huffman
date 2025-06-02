@@ -19,7 +19,7 @@ int main(){
     node4->frequency = 29;
 
     huffman_node * node5 = malloc(sizeof(huffman_node));
-    node5->frequency = 0;
+    node5->frequency = 1;
 
     huffman_list_push(&array, node1);
     huffman_list_push(&array, node2);
@@ -29,9 +29,7 @@ int main(){
 
     print_huffman_array(&array);
 
-    while(check_ordered_list(&array) == false){
-        bubble_sort_iteration(&array);
-    }
+    bubble_sort_array(&array);
     
     print_huffman_array(&array);
     
@@ -41,8 +39,10 @@ int main(){
         printf("Not in order\n");
     }
 
-    // free in order
-    // do it eventually ugh
-    
 
+    while(merge_huffman_iteration(&array) == true) {
+        bubble_sort_array(&array);
+        print_huffman_array(&array);
+    }
+    
 }
