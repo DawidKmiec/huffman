@@ -5,6 +5,22 @@ int main(){
     huffman_list array;
     array.length = 0;
     array.start = NULL;
+    
+    char_buffer line = {"Hello this is a test of if it can count shit like this aaaaaaaaaaaaaaaaaaaaa testing"};    
+    char_counter accumulator = {0};
+    
+    character_counter(&line, &accumulator);
+    print_chars(&accumulator);
+
+    push_accumulated_chars(&array, &accumulator);
+    print_huffman_array(&array);
+
+}
+/*
+    
+    huffman_list array;
+    array.length = 0;
+    array.start = NULL;
 
     huffman_node * node1 = malloc(sizeof(huffman_node));
     node1->frequency = 5;
@@ -45,4 +61,5 @@ int main(){
         print_huffman_array(&array);
     }
     
-}
+// turn a string into a huffman array
+*/

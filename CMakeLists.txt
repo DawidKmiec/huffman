@@ -5,7 +5,8 @@ add_executable(${PROJECT_NAME} main.c)
 
 add_library (
     src
-    src/tree.c
+    src/treemerger.c
+    src/stringcounter.c
 )
 
 target_include_directories(src PUBLIC include)
