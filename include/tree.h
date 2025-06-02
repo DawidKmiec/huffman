@@ -31,6 +31,8 @@ void bubble_sort_array(huffman_list* array);
 
 bool merge_huffman_iteration(huffman_list* array);
 
+huffman_node merge_huffman(huffman_list* array);
+
 // STRING COUNTER
 
 typedef struct char_buffer{

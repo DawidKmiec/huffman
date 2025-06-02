@@ -57,7 +57,7 @@ bool merge_huffman_iteration(huffman_list* array) {
 
     temp->frequency = ((int)array->start[array->length-1]->frequency + (int)array->start[array->length-2]->frequency);
 
-    realloc(array->start, array->length-1);
+    realloc(array->start, (array->length-1)*sizeof(huffman_node*));
     if(array->start == NULL){
         abort();
     }
@@ -68,6 +68,11 @@ bool merge_huffman_iteration(huffman_list* array) {
     return true;
 }
 
-// now create a merge function
-// from the two left strings connect them up
-// sort and repeat
+huffman_node merge_huffman(huffman_list* array) {
+    do {
+        bubble_sort_array(array);
+        // print_huffman_array(array);
+    } while(merge_huffman_iteration(array) == true);
+
+    return *(array->start[0]);
+}

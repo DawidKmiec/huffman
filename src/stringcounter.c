@@ -33,3 +33,4 @@ void push_accumulated_chars(huffman_list* array, char_counter* counter) {
         }
     }
 }
+
